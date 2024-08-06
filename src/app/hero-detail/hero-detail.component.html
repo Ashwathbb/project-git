@@ -1,0 +1,11 @@
+<div *ngIf="hero" class="mt-4 p-3 border rounded bg-light">
+  <h2>{{hero.name | uppercase}} Details</h2>
+  <div><span class="fw-bold">id: </span>{{hero.id}}</div>
+  
+  <div class="mt-2">
+    <label for="hero-name" class="form-label">Hero name: </label>
+    <input id="hero-name" class="form-control" [(ngModel)]="hero.name" placeholder="name">
+  </div>
+
+  <button (click)="goBack()" class="btn btn-secondary mt-3">Back</button>
+</div>
